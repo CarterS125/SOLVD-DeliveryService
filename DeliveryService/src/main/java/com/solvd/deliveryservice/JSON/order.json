@@ -1,0 +1,71 @@
+{
+  "orders": [
+    {
+      "orderId": 1,
+      "price": 25.99,
+      "items": [
+        {
+          "itemId": 1,
+          "itemName": "Toothpaste",
+          "itemPrice": 2.99
+        },
+        {
+          "itemId": 2,
+          "itemName": "Shampoo",
+          "itemPrice": 3.99
+        }
+      ],
+      "address": {
+        "street": "123 Main St",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipcode": "94102"
+      }
+    },
+    {
+      "orderId": 2,
+      "price": 35.99,
+      "items": [
+        {
+          "itemId": 3,
+          "itemName": "Toothbrush",
+          "itemPrice": 1.99
+        },
+        {
+          "itemId": 4,
+          "itemName": "Conditioner",
+          "itemPrice": 4.99
+        }
+      ],
+      "address": {
+        "street": "456 Market St",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipcode": "94103"
+      }
+    },
+    {
+      "orderId": 3,
+      "price": 45.99,
+      "items": [
+        {
+          "itemId": 5,
+          "itemName": "Mouthwash",
+          "itemPrice": 5.99
+        },
+        {
+          "itemId": 6,
+          "itemName": "Body wash",
+          "itemPrice": 6.99
+        }
+      ],
+      "address": {
+        "street": "789 Mission St",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipcode": "94104"
+      }
+    }
+  ],
+  "averageOrder": 36.66
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user>
+    <id>{id}</id>
+    <username>{username}</username>
+    <email>{email}</email>
+    <firstName>{firstName}</firstName>
+    <lastName>{lastName}</lastName>
+    <address>{address}</address>
+    <phoneNumber>{phoneNumber}</phoneNumber>
+</user>
+

@@ -1,0 +1,19 @@
+{
+  "stores": [
+    {
+      "storeName": "Grocery Store",
+      "storeType": "Grocery",
+      "location": "123 Main St, Anytown USA 12345"
+    },
+    {
+      "storeName": "Convenience Store",
+      "storeType": "Convenience",
+      "location": "456 Market St, Anytown USA 56789"
+    },
+    {
+      "storeName": "Pharmacy",
+      "storeType": "Pharmacy",
+      "location": "789 Health St, Anytown USA 101112"
+    }
+  ]
+}

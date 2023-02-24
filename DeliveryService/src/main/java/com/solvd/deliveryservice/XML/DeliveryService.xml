@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<deliveryService>
+    <orders>
+        <order>
+            <orderId>1</orderId>
+            <userId>1</userId>
+            <storeId>1</storeId>
+            <items>
+                <item>
+                    <itemId>1</itemId>
+                    <quantity>2</quantity>
+                </item>
+                <item>
+                    <itemId>2</itemId>
+                    <quantity>1</quantity>
+                </item>
+            </items>
+        </order>
+        <order>
+            <orderId>2</orderId>
+            <userId>2</userId>
+            <storeId>2</storeId>
+            <items>
+                <item>
+                    <itemId>3</itemId>
+                    <quantity>3</quantity>
+                </item>
+            </items>
+        </order>
+    </orders>
+    <stores>
+        <store>
+            <storeId>1</storeId>
+            <storeName>Store 1</storeName>
+            <location>Location 1</location>
+        </store>
+        <store>
+            <storeId>2</storeId>
+            <storeName>Store 2</storeName>
+            <location>Location 2</location>
+        </store>
+    </stores>
+    <users>
+        <user>
+            <userId>1</userId>
+            <username>User 1</username>
+            <address>Address 1</address>
+        </user>
+        <user>
+            <userId>2</userId>
+            <username>User 2</username>
+            <address>Address 2</address>
+        </user>
+    </users>
+    <items>
+        <item>
+            <itemId>1</itemId>
+            <itemName>Item 1</itemName>
+            <price>10.0</price>
+        </item>
+        <item>
+            <itemId>2</itemId>
+            <itemName>Item 2</itemName>
+            <price>20.0</price>
+        </item>
+        <item>
+            <itemId>3</itemId>
+            <itemName>Item 3</itemName>
+            <price>30.0</price>
+        </item>
+    </items>
+</deliveryService>

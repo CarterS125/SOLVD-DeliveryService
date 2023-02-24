@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.example.DeliveryServiceCompanyMapper">
+    <resultMap id="AppResultMap" type="com.example.App">
+        <id property="appId" column="app_id" />
+        <result property="version" column="version" javaType="int"/>
+        <result property="deviceList" column="device_list" javaType="java.util.List"/>
+    </resultMap>
+
+    <resultMap id="DriverResultMap" type="com.example.Driver">
+        <id property="driverId" column="driver_id" />
+        <result property="firstName" column="first_name" javaType="String"/>
+        <result property="lastName" column="last_name" javaType="String"/>
+        <result property="age" column="age" javaType="int"/>
+    </resultMap>
+
+    <resultMap id="OrderResultMap" type="com.example.Order">
+        <id property="orderId" column="order_id" />
+        <result property="driver" column="driver" javaType="com.example.Driver"/>
+        <result property="active" column="active" javaType="boolean"/>
+        <result property="price" column="price" javaType="double"/>
+        <result property="averagePrice" column="average_price" javaType="double"/>
+        <result property="address" column="address" javaType="com.example.Address"/>
+        <result property="car" column="car" javaType="com.example.Car"/>
+        <result property="store" column="store" javaType="com.example.Store"/>
+        <result property="itemList" column="item_list" javaType="java.util.List"/>
+    </resultMap>
+
+    <resultMap id="StoreResultMap" type="com.example.Store">
+        <id property="storeId" column="store_id" />
+        <result property="storeName" column="store_name" javaType="String"/>
+        <result property="storeType" column="store_type" javaType="String"/>
+        <result property="location" column="location" javaType="com.example.Location"/>
+    </resultMap>
+
+    <resultMap id="ItemResultMap" type="com.example.Item">
+        <id property="itemId" column="item_id" />
+        <result property="name" column="name" javaType="String"/>
+        <result property="price" column="price" javaType="double"/>
+    </resultMap>
+
+    <select id="getApps" resultMap="AppResultMap">
+        SELECT * FROM apps
+    </select>
+
+    <select id="getDrivers" resultMap="DriverResultMap">
+        SELECT * FROM drivers
+    </select>
+
+    <select id="getOrders" resultMap="OrderResultMap">
+        SELECT * FROM orders
+    </select>
+
+    <select id="getStores" resultMap="StoreResultMap">
+        SELECT * FROM stores
+    </select>
+
+    <select id="getItems" resultMap="ItemResultMap">
+        SELECT * FROM items
+    </select>
+        <insert id="insertOrder">
+            INSERT INTO orders (price, average_price, driver_id, address_id, car_id, store_id)
+            VALUES (#{price}, #{averagePrice}, #{driver.id}, #{address.id}, #{car.id}, #{store.id});
+        </insert>
+
+        <update id="updateOrder">
+            UPDATE orders
+            SET price = #{price}, average_price = #{averagePrice}, driver_id = #{driver.id}, address_id = #{address.id}, car_id = #{car.id}, store_id = #{store.id}
+            WHERE id = #{id};
+        </update>
+
+    <update id="updateDriver">
+        UPDATE drivers
+        SET first_name = #{firstName}, last_name = #{lastName}, age = #{age}
+        WHERE id = #{id};
+    </update>
+
+    <update id="updateStore">
+        UPDATE stores
+        SET store_name = #{storeName}, store_type = #{storeType}, location_id = #{location.id}
+        WHERE id = #{id};
+    </update>
+
+    <update id="updateItem">
+        UPDATE items
+        SET name = #{name}, price = #{price}
+        WHERE id = #{id};
+    </update>
+
+    <delete id="deleteOrder">
+        DELETE FROM orders
+        WHERE id = #{id};
+    </delete>
+
+    <delete id="deleteDriver">
+        DELETE FROM drivers
+        WHERE id = #{id};
+    </delete>
+
+    <delete id="deleteStore">
+        DELETE FROM stores
+        WHERE id = #{id};
+    </delete>
+
+    <delete id="deleteItem">
+        DELETE FROM items
+        WHERE id = #{id};
+    </delete>
+</mapper>

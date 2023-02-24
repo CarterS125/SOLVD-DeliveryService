@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order>
+    <id>{id}</id>
+    <customerId>{customerId}</customerId>
+    <orderDate>{orderDate}</orderDate>
+    <totalAmount>{totalAmount}</totalAmount>
+    <items>
+        <item>
+            <itemId>{itemId}</itemId>
+            <itemName>{itemName}</itemName>
+            <itemPrice>{itemPrice}</itemPrice>
+            <itemQuantity>{itemQuantity}</itemQuantity>
+        </item>
+        <!-- Add more item elements here as needed -->
+    </items>
+</order>
+

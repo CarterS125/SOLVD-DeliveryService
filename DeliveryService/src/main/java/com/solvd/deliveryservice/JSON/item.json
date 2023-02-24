@@ -1,0 +1,39 @@
+[
+  {
+    "itemName": "Milk",
+    "price": 3.99,
+    "category": "Grocery Store",
+    "description": "A nutritious drink made from cow's milk"
+  },
+  {
+    "itemName": "Bread",
+    "price": 2.99,
+    "category": "Grocery Store",
+    "description": "A staple food made from wheat flour and water"
+  },
+  {
+    "itemName": "Chips",
+    "price": 1.99,
+    "category": "Convenience Store",
+    "description": "A popular snack food made from sliced potatoes"
+  },
+  {
+    "itemName": "Soft Drink",
+    "price": 2.49,
+    "category": "Convenience Store",
+    "description": "A sweet and carbonated beverage made from water and flavorings"
+  },
+  {
+    "itemName": "Pain Reliever",
+    "price": 9.99,
+    "category": "Pharmacy",
+    "description": "A medication used to relieve pain and reduce fever"
+  },
+  {
+    "itemName": "Cough Syrup",
+    "price": 12.99,
+    "category": "Pharmacy",
+    "description": "A liquid medication used to relieve coughing and sore throat"
+  }
+]
+

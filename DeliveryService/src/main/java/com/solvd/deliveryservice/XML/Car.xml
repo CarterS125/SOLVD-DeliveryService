@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Car Makes -->
+    <string-array name="car_makes">
+        <item>Toyota</item>
+        <item>Honda</item>
+        <item>Ford</item>
+    </string-array>
+
+    <!-- Car Models -->
+    <string-array name="toyota_models">
+        <item>Camry</item>
+        <item>Corolla</item>
+        <item>Prius</item>
+    </string-array>
+
+    <string-array name="honda_models">
+        <item>Civic</item>
+        <item>Accord</item>
+        <item>CR-V</item>
+    </string-array>
+
+    <string-array name="ford_models">
+        <item>Fusion</item>
+        <item>Mustang</item>
+        <item>Explorer</item>
+    </string-array>
+
+    <!-- List of Cars -->
+    <string-array name="cars">
+        <item>Toyota Camry</item>
+        <item>Honda Civic</item>
+        <item>Ford Mustang</item>
+    </string-array>
+</resources>

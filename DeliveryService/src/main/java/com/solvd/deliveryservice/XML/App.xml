@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app>
+    <id>{id}</id>
+    <appName>{appName}</appName>
+    <appType>{appType}</appType>
+    <appDescription>{appDescription}</appDescription>
+    <appVersion>{appVersion}</appVersion>
+    <developerName>{developerName}</developerName>
+</app>

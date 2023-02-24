@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="resources" type="resourcesType"/>
+  <xs:complexType name="stringType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="name" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="string-arrayType">
+    <xs:sequence>
+      <xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="ABC Store, Grocery, 123 Main St, Anytown, USA"/>
+            <xs:enumeration value="XYZ Store, Convenience, 456 Main St, Anytown, USA"/>
+            <xs:enumeration value="MNO Store, Pharmacy, 789 Main St, Anytown, USA"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name"/>
+  </xs:complexType>
+  <xs:complexType name="resourcesType">
+    <xs:sequence>
+      <xs:element type="stringType" name="string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation> Store Information </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element type="string-arrayType" name="string-array">
+        <xs:annotation>
+          <xs:documentation> List of Stores </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

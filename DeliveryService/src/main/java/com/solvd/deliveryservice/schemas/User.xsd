@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="resources" type="resourcesType"/>
+  <xs:complexType name="stringType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="name" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="string-arrayType">
+    <xs:sequence>
+      <xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Jane Doe, 25"/>
+            <xs:enumeration value="John Doe, 30"/>
+            <xs:enumeration value="Bob Smith, 40"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name"/>
+  </xs:complexType>
+  <xs:complexType name="resourcesType">
+    <xs:sequence>
+      <xs:element type="stringType" name="string" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation> User Information </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element type="string-arrayType" name="string-array">
+        <xs:annotation>
+          <xs:documentation> List of Users </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

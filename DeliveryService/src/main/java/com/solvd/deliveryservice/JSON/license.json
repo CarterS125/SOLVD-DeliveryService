@@ -1,0 +1,81 @@
+[
+  {
+    "driverName": "John Doe",
+    "licenseNumber": "ABC123",
+    "expirationDate": "2025-12-31",
+    "state": "California",
+    "car":
+    {
+      "make": "Toyota",
+      "model": "Camry",
+      "year": 2022,
+      "color": "Silver"
+    }
+  },
+  {
+    "driverName": "Jane Doe",
+    "licenseNumber": "DEF456",
+    "expirationDate": "2026-12-31",
+    "state": "New York",
+    "car":
+    {
+      "make": "Honda",
+      "model": "Accord",
+      "year": 2021,
+      "color": "Red"
+    }
+  },
+  {
+    "driverName": "Jim Smith",
+    "licenseNumber": "GHI789",
+    "expirationDate": "2027-12-31",
+    "state": "Texas",
+    "car":
+    {
+      "make": "Ford",
+      "model": "F-150",
+      "year": 2020,
+      "color": "Blue"
+    }
+  },
+  {
+    "driverName": "Jack Johnson",
+    "licenseNumber": "JKL101",
+    "expirationDate": "2024-12-31",
+    "state": "Florida",
+    "car":
+    {
+      "make": "Chevrolet",
+      "model": "Impala",
+      "year": 2022,
+      "color": "Black"
+    }
+  },
+  {
+    "driverName": "Jill Wilson",
+    "licenseNumber": "MNO202",
+    "expirationDate": "2028-12-31",
+    "state": "Illinois",
+    "car":
+    {
+      "make": "Dodge",
+      "model": "Charger",
+      "year": 2021,
+      "color": "White"
+    }
+  },
+  {
+    "driverName": "Jake Parker",
+    "licenseNumber": "PQR303",
+    "expirationDate": "2023-12-31",
+    "state": "Pennsylvania",
+    "car":
+    {
+      "make": "Nissan",
+      "model": "Altima",
+      "year": 2020,
+      "color": "Gray"
+    }
+  }
+]
+
